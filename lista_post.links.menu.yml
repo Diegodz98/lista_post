@@ -1,0 +1,5 @@
+lista_post.listar:
+  title: 'Posts'
+  description: 'Listado de Post'
+  route_name: lista_post.listar
+  menu_name: 'main'

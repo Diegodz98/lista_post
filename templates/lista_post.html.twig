@@ -1,0 +1,40 @@
+{{ attach_library('lista_post/global') }}
+
+<div class="contenedor">
+    <div class="seccion-titulo">
+        <h2>{{titulo}}</h2>
+    </div>
+    <div class="formulario">
+        <input type="search" name="" id="filtro" placeholder="Buscar..." class="input-buscar">
+        <button id="btnExportar" class="btnExportar">Exportar Exel</button>
+        
+    </div>
+
+    <table class="tabla-post" id="tablaPosts">
+        <thead>
+        <tr> 
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Contenido</th>
+
+
+        </tr>
+        </thead>
+                <tbody>
+                    {% for post in posts %}
+                        <tr class="fila-post">
+                            
+                            <td>{{ post.data.id }}</td>
+                            <td>{{ post.data.title }}</td>
+                            <td>{{ post.data.body }}</td>
+
+
+                        </tr>
+                            
+
+                            
+                    {% endfor %}
+                </tbody>
+            </table>
+
+</div>

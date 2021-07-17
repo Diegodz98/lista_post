@@ -1,0 +1,11 @@
+global:
+  css:
+    theme:
+      css/estilos.css: {}
+  js:
+    js/xlsx.full.min.js: {}
+    js/FileSaver.min.js: {}
+    js/tableexport.min.js: {}
+    js/app.js: {}
+
+

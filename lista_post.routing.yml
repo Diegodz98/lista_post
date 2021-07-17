@@ -1,0 +1,7 @@
+lista_post.listar:
+  path: '/post/listar'
+  defaults:
+    _controller: 'Drupal\lista_post\Controller\PostController::listar'
+  requirements:
+    _permission: 'access content'    
+
